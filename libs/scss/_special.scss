@@ -1,0 +1,110 @@
+.special {
+  background: url("../images/special/special-background.png") 0 0 / cover
+    no-repeat;
+  height: 800px;
+  margin-top: 50px;
+  position: relative;
+  padding: 80px 10px 0 10px;
+  img {
+    position: absolute;
+    z-index: 5;
+  }
+}
+.special-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.special-month {
+  font-size: 35px;
+  font-weight: 700;
+
+  &__title {
+    text-transform: uppercase;
+    color: rgb(38, 38, 38);
+    background-color: #e1b838;
+    padding: 0px 10px;
+  }
+
+  &__text {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 4px solid #e1b838;
+    padding: 30px 0;
+  }
+}
+.special-text {
+  width: 45%;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+}
+.special-meat {
+  img {
+    top: 40%;
+    left: 5%;
+    width: 600px;
+    height: 600px;
+  }
+}
+.special-kukuruz {
+  img {
+    right: 3%;
+  }
+}
+.special-knife {
+  img {
+    bottom: -10%;
+    right: 30%;
+    width: 300px;
+    height: 450px;
+  }
+}
+@media (max-width: 1100px) {
+  .special-content {
+    flex-direction: column;
+  }
+  .special-text {
+    width: 90%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .special {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .special-meat {
+    img {
+      top: 60%;
+      left: 3%;
+    }
+  }
+  .special-knife {
+    img {
+      height: 400px;
+      bottom: 0;
+    }
+  }
+  .special-kukuruz {
+    img {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+@media (max-width: 825px) {
+  .special {
+    height: auto;
+    padding: 60px 15px;
+  }
+  .special img {
+    display: none;
+  }
+  .special-month {
+    &__title {
+      text-align: center;
+    }
+  }
+}
